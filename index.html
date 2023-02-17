@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentines Budget Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="text-4xl text-red-500 font-bold text-center">
+        <h1>Valentine Budget : <span>1500</span></h1>
+    </header>
+
+    <main>
+        <section class=" grid grid-col md:grid-cols-2 lg:grid-cols-2 ">
+           
+            <div class="product-details lg:px-2 lg:mx-2 w-[50%]">
+                <div class="card w-96 bg-base-100 shadow-2xl">
+                    <figure class="px-10 pt-10">
+                      <img class="w-full h-30" src="images/kitkat.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">kitkat  Chocolate</h2>
+                      <h3>Price : <span id="kitkat-price">200</span></h3>
+                      <input type="text" id="kitkat-input-field" placeholder="Type quantity" class="input input-bordered input-sm w-full max-w-xs" />
+                      <div class="card-actions">
+                        <button id="kitkat-btn" class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                </div>
+
+                  <div class="card w-96 h-45 bg-red-100 shadow-2xl mt-4">
+                    <figure class="px-10 pt-10">
+                      <img class="w-full h-30" src="images/image-removebg-preview.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Rose</h2>
+                      <h3>Price : <span id="rose-price">100</span></h3>
+                      <div class="card-actions">
+                        <input type="text" id="rose-input-field" placeholder="Type quantity" class="input input-bordered input-sm w-full max-w-xs" />
+                        <button id="rose-btn" class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card w-96 bg-base-100 shadow-2xl mt-4">
+                    <figure class="px-10 pt-10">
+                      <img class="w-full h-30" src="images/diary.jpg" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Dairy</h2>
+                      <h3>Price : <span id="dairy-price">100</span></h3>
+                      <div class="card-actions">
+                        <input  id="dairy-total-input" type="text" placeholder="Type here" class="input input-bordered input-sm w-full max-w-xs" />
+                        <button id="dairy-btn" class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="cost-details lg:w-[50%] text-center text-3xl font-bold lg:px-12 lg:my-12 w-full mx-auto rounded">
+                <h2 class="border-b-4 border-indigo-800 border-w-96 lg:mb-8">Chocolate: <span id="chocolate-total-price">00</span></h2>
+                <h2 class="border-b-4 border-indigo-800  lg:mb-8">Rose: <span id="rose-total-price">00</span></h2>
+                <h2 class="border-b-4 border-indigo-800 lg:mb-8">Diary: <span id="dairy-total-price">00</span></h2>
+                <h2 class="lg:mb-8">Total: <span id="total">00</span></h2>
+                <h3 class="bg-blue-400 text-1xl rounded lg:mb-8">Use Promo Code for 10% Discount</h3>
+                <input id="promo-code" type="text" placeholder="101" class="input input-bordered input-sm w-full max-w-xs lg:mb-8" />
+                <button id="apply-btn" class="btn btn-primary lg:py-5 lg:my-8">Apply</button>
+                <div class="lg:mb-8">
+                    <h2>All Cost : <span id="all-cost">00</span></h2>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+</html>
